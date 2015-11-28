@@ -345,17 +345,7 @@ function onDeviceReady() {
 	});
 	admob.showBannerAd(true);
 	//admob.requestInterstitialAd({publisherId: "ca-app-pub-9008926290238612/1293273063", interstitialAdId: "ca-app-pub-9008926290238612/1373998261"});	
-	/*
-	admob.setOptions({
-      		publisherId: 'ca-app-pub-9008926290238612/1293273063',
-      		interstitialAdId: 'ca-app-pub-9008926290238612/1373998261',
-      		bannerAtTop: false, // set to true, to put banner at top
-      		overlap: true, // set to true, to allow banner overlap webview
-      		autoShowBanner: true, // auto show banners ad when loaded
-      		autoShowInterstitial: false // auto show interstitials ad when loaded
-    	});
-    	*/
-	
+	//admob.showInterstitialAd();
 }
 document.addEventListener("deviceready", onDeviceReady, false);
 </script>
