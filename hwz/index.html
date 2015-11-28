@@ -170,28 +170,7 @@ $(document).ready(function() {
 	});
 });
 </script>
-<script>
-	function onDeviceReady() {
-      document.removeEventListener('deviceready', onDeviceReady, false);
 
-      // Set AdMobAds options:
-      admob.setOptions({
-        publisherId:          "ca-app-pub-9008926290238612/1293273063",  // Required
-        interstitialAdId:     "ca-app-pub-9008926290238612/1373998261",  // Optional
-        //tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
-        //tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
-        //tappxShare:           0.5                                        // Optional
-      });
-
-      // Start showing banners (atomatic when autoShowBanner is set to true)
-      admob.createBannerView(true);
-
-      // Request interstitial (will present automatically when autoShowInterstitial is set to true)
-      admob.requestInterstitialAd(true);
-    }
-
-    document.addEventListener("deviceready", onDeviceReady, false);
-</script>
 </head>
 
 <body>
@@ -359,5 +338,11 @@ $(document).ready(function() {
             </div>
         </div>
 	</footer>
+<script>
+function onDeviceReady() {
+	admob.requestInterstitialAd({publisherId: "ca-app-pub-9008926290238612/1293273063", interstitialAdId: "ca-app-pub-9008926290238612/1373998261"});	
+}
+document.addEventListener("deviceready", onDeviceReady, false);
+</script>
 </body>
 </html>
