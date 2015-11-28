@@ -1,1 +1,14 @@
-<plugin name="com.admob.google" spec="4.0.8" source="pgb" />
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.griyapps.hwz" version="1.0.0" versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>HWZ</name>
+  <description>
+    Law's Firm App.
+  </description>
+  <author email="hi@zainalabidin.xyz" href="https://github.com/okakzai/HWZ-Bootstrap">HWZ</author>
+  <content src="index.html" />
+  <access origin="*" />
+  <preference name="LogLevel" value="VERBOSE"/>
+  <preference name="debuggable" value="true"/>
+  
+  <gap:plugin name="cordova-admob" source="npm" />
+</widget>
