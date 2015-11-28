@@ -184,10 +184,10 @@ $(document).ready(function() {
       });
 
       // Start showing banners (atomatic when autoShowBanner is set to true)
-      admob.createBannerView();
+      admob.createBannerView(true);
 
       // Request interstitial (will present automatically when autoShowInterstitial is set to true)
-      admob.requestInterstitialAd();
+      admob.requestInterstitialAd(true);
     }
 
     document.addEventListener("deviceready", onDeviceReady, false);
