@@ -340,7 +340,10 @@ $(document).ready(function() {
 	</footer>
 <script>
 function onDeviceReady() {
-	admob.requestInterstitialAd({publisherId: "ca-app-pub-9008926290238612/1293273063", interstitialAdId: "ca-app-pub-9008926290238612/1373998261"});	
+	admob.createBannerView({
+  		publisherId:          "ca-app-pub-9008926290238612/1293273063"
+	});
+	//admob.requestInterstitialAd({publisherId: "ca-app-pub-9008926290238612/1293273063", interstitialAdId: "ca-app-pub-9008926290238612/1373998261"});	
 }
 document.addEventListener("deviceready", onDeviceReady, false);
 </script>
