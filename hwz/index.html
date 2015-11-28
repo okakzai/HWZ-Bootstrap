@@ -338,16 +338,11 @@ $(document).ready(function() {
             </div>
         </div>
 	</footer>
-<script>
-function onDeviceReady() {
-	admob.createBannerView({
-  		publisherId:          "ca-app-pub-9008926290238612/1293273063"
-	});
-	admob.showBannerAd(true);
-	//admob.requestInterstitialAd({publisherId: "ca-app-pub-9008926290238612/1293273063", interstitialAdId: "ca-app-pub-9008926290238612/1373998261"});	
-	//admob.showInterstitialAd();
-}
-document.addEventListener("deviceready", onDeviceReady, false);
-</script>
+	<script type="text/javascript" src="js/index.js"></script>
+  	<script type="text/javascript">
+    		app.initialize();
+    		app.startBannerAds();
+    		app.showBannerAds();
+  	</script>
 </body>
 </html>
